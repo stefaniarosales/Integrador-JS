@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(39, 38, 38);
+  /* outline: 1px solid rgb(59, 58, 58); */
+}
+
+
+/* ---------------------------------- Estilos generales ---------------------------- */
+body {
+  background-color: rgba(95, 101, 101, 0.995);
+  font-family: sans-serif;
+}
+main {
+  width: 100%;
+  height: 90vh;
+}
+
+/* ---------------------------------- Menú hamburguesa ---------------------------- */
+aside {
+  background-color: rgba(88, 88, 88, 0.384);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 5rem;
+  padding: 1rem;
+
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+/* Icon menú Hamburguesa */
+.icon {
+  font-size: 1.5rem;
+  color: rgb(42, 40, 40);
+}
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-left: 0;
+}
+.nav-list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-weight: bolder;
+}
+
+
+/* ---------------------------------- Header-logo ------ ---------------------------- */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.logo {
+  display: flex;
+  align-items: end;
+  width: 8rem;
+
+}
+/* ---------------------------------- Section-hero -------------------------------- */
+
+#hero {
+  background-image: url(./public/img/hero/SP.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ---------------------------------- Section-About Us -------------------------------- */
+#aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+}
+#aboutUs p {
+  text-align: center;
+  max-width: 700px;
+}
+h2 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.container-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+
+.info {
+  background-color: rgba(88, 88, 88, 0.384);
+  border-radius: 10px;
+  width: 400px;
+  padding: 1rem;
+  margin: 1rem;
+}
+.info1 {
+  background-image: url(./public/img/aboutUs/escudo.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left bottom ;
+  filter: blur(4px);
+}
+
+.info2 {
+  background-image: url(./public/img/aboutUs/hulk.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right top;
+  filter: blur(4px);
+}
+
+.info3 {
+  background-image: url(./public/img/aboutUs/ojoHalcon.png);
+  background-repeat: no-repeat;
+  
+}
+.filter {
+  filter: none;
+}
+.info h3 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+
+/* ---------------------------------- Footer -------------------------------- */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
