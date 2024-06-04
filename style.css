@@ -98,7 +98,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 5rem 2rem;
+  padding: 2rem 4rem;
 }
 #aboutUs p {
   text-align: center;
