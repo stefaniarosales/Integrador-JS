@@ -1,18 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  color: rgb(39, 38, 38);
+  color: rgb(255, 255, 255);
   /* outline: 1px solid rgb(59, 58, 58); */
 }
 
 
 /* ---------------------------------- Estilos generales ---------------------------- */
 body {
-  background-color: rgba(95, 101, 101, 0.995);
-  font-family: sans-serif;
+  background-color: rgba(57, 59, 59, 0.995);
+  font-family: "Lato", sans-serif;
 }
 main {
   width: 100%;
@@ -23,21 +26,22 @@ main {
 aside {
   background-color: rgba(88, 88, 88, 0.384);
   border-radius: 10px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  width: 5rem;
+  width: 4rem;
   padding: 1rem;
 
-  position: absolute;
+  position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 /* Icon menú Hamburguesa */
 .icon {
-  font-size: 1.5rem;
-  color: rgb(42, 40, 40);
+  width: 1.5rem;
+  color: rgb(218, 204, 204);
 }
 .nav-icon {
   display: flex;
@@ -45,6 +49,8 @@ aside {
   align-items: center;
   gap: 1.5rem;
   padding-left: 0;
+
+  
 }
 .nav-list {
   display: none;
@@ -70,7 +76,7 @@ header {
   display: flex;
   align-items: end;
   width: 8rem;
-
+  
 }
 /* ---------------------------------- Section-hero -------------------------------- */
 
@@ -92,11 +98,12 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
 }
 #aboutUs p {
   text-align: center;
   max-width: 700px;
+  margin-bottom: 0px;
 }
 h2 {
   font-weight: bolder;
@@ -104,6 +111,7 @@ h2 {
   font-size: 3rem;
 }
 
+/* mediaqueries  */
 
 .container-info {
   width: 100%;
@@ -121,30 +129,7 @@ h2 {
   padding: 1rem;
   margin: 1rem;
 }
-.info1 {
-  background-image: url(./public/img/aboutUs/escudo.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left bottom ;
-  filter: blur(4px);
-}
 
-.info2 {
-  background-image: url(./public/img/aboutUs/hulk.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right top;
-  filter: blur(4px);
-}
-
-.info3 {
-  background-image: url(./public/img/aboutUs/ojoHalcon.png);
-  background-repeat: no-repeat;
-  
-}
-.filter {
-  filter: none;
-}
 .info h3 {
   text-align: center;
   font-weight: bolder;
