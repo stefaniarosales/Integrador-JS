@@ -14,84 +14,103 @@
 
 /* ---------------------------------- Estilos generales ---------------------------- */
 body {
-  background-color: rgba(57, 59, 59, 0.995);
+  background-color: #242424;
   font-family: "Lato", sans-serif;
 }
 main {
   width: 100%;
-  height: 90vh;
 }
 
 /* ---------------------------------- Menú hamburguesa ---------------------------- */
-aside {
+header {
   background-color: rgba(88, 88, 88, 0.384);
-  border-radius: 10px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  width: 4rem;
-  padding: 1rem;
+  gap: 2.5rem;
+  width: 9rem;
+  padding: 0.5rem;
 
   position: fixed;
   top: 0;
   z-index: 2;
 }
+.containerLogo {
+  width: 100%;
+  display: flex;
+  padding: 0 0.5rem ;
+}
+.logo {
+  width: 6rem;
+  margin-top: 1rem;
+}
+.containerMenu {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem 0.5rem ;
+}
+
 /* Icon menú Hamburguesa */
 .icon {
   width: 1.5rem;
-  color: rgb(218, 204, 204);
+  color: rgb(249, 248, 248);
 }
+/* menú visible */
 .nav-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   padding-left: 0;
-
-  
+  cursor: pointer;
 }
-.nav-list {
-  display: none;
-  flex-direction: column;
-  align-items: center;
+.nav-icon a {
+  display: flex;
   gap: 0.5rem;
-
-  font-weight: bolder;
-}
-
-
-/* ---------------------------------- Header-logo ------ ---------------------------- */
-header {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem 2rem;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.logo {
-  display: flex;
-  align-items: end;
   width: 8rem;
-  
+  color: white;
+  padding: 0.5rem;
+  font-weight: bolder;
+
+
+  list-style: none;
+  text-decoration: none;
 }
+
+/* efecto :hover */
+.hover:hover {
+  /* color: rgb(124, 69, 66); */
+  background-color: rgb(33, 35, 35);
+  border-radius: 0.2rem;
+}
+
+
 /* ---------------------------------- Section-hero -------------------------------- */
 
 #hero {
-  background-image: url(./public/img/hero/SP.png);
+  /* background-image: url(./public/img/hero/SP.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-
-  
+ */
+  display: flex;
+  justify-content: center;
+  padding: 2rem 4rem;
   width: 100%;
-  height: 100%;
 }
+.contenedorImg {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.contenedorImg img {
+  width: 90%;
+}
+.ocultar {
+  display: none;
 
-
+}
 /* ---------------------------------- Section-About Us -------------------------------- */
 #aboutUs {
   display: flex;
@@ -101,7 +120,9 @@ header {
   padding: 2rem 4rem;
 }
 #aboutUs p {
+  font-weight: lighter;
   text-align: center;
+  padding: 0 0.5rem;
   max-width: 700px;
   margin-bottom: 0px;
 }
@@ -111,26 +132,24 @@ h2 {
   font-size: 3rem;
 }
 
-/* mediaqueries  */
-
 .container-info {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0.5rem;
 }
 
 
 .info {
   background-color: rgba(88, 88, 88, 0.384);
   border-radius: 10px;
-  width: 400px;
-  padding: 1rem;
+  width: 450px;
+  padding: 0.5rem;
   margin: 1rem;
 }
 
 .info h3 {
+  color: rgb(215, 211, 207);
   text-align: center;
   font-weight: bolder;
 }
@@ -141,5 +160,8 @@ h2 {
 footer {
   width: 100%;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
+}
+.logoFooter {
+  width: 2rem;
 }
